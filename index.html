@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css">
+  <title>LOURAENA's PROFILE</title>
+  
+</head>
+<body>
+  <header>
+    <div class="logo">LOURAENA</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="project.html">Projects</a></li>
+      </ul>
+    </nav>
+    <div class="burger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+  <div class="container">
+    <section class="hero">
+      <div class="hero-images">
+        <img src="Image/backbask-removebg-preview.png" alt="Background" />
+        <img src="Image/loulou-removebg-preview (1).png" alt="Character" />
+      </div>
+      <div class="hero-text">
+        <h5>Hello, It's Me</h5>
+        <h1>
+          <span class="cyndi">Cyndi</span><span class="lou">lou</span>
+          <span class="Ceasa">Ceasa</span><span class="ra">ra</span>
+          <br /><span class="guill">Guill</span><span class="ena">ena</span>
+        </h1>
+        <p>Welcome to my digital realm, where every line of code weaves dreams into reality.</p>
+        <a href="about.html" class="join-btn">Know More</a>
+      </div>
+    </section>
+  </div>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+      document.querySelector('.burger').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

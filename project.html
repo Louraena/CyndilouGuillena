@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css">
+  <title>LOURAENA's PROFILE</title>
+
+  <style>
+    
+.containera{
+  display: flex;
+  gap: 20px;
+  margin: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container {
+  width: 350px; /* Fixed width for all containers */
+  min-height: 250px; /* Ensures all boxes have the same minimum height */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15); /* Transparent glass effect */
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+.container h2 {
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.container p {
+  font-size: 15px;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+.container .btn {
+    background: linear-gradient(135deg, #0582f0, #0066cc);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      box-shadow: 0 4px 10px rgba(0, 102, 204, 0.4);
+      transition: all 0.3s ease-in-out;
+}
+
+.container .btn:hover {
+    background: linear-gradient(135deg, #0066cc, #0044aa);
+    box-shadow: 0 6px 15px rgba(0, 102, 204, 0.6);
+}
+
+/* Ensuring all containers have equal height */
+.containera {
+  display: flex;
+  align-items: stretch;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    width: 300px; /* Adjust width for medium screens */
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%; /* Full width in small screens */
+    min-height: auto; /* Allow height to adjust based on content */
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <header>
+        <div class="logo">LOURAENA</div>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="project.html" class="active">Projects</a></li>
+            </ul>
+          </nav>
+    
+        <div class="burger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        </div>
+  </header>
+<div class="containera">
+  <div class="container">
+    <h2>BlackPink Website</h2>
+    <p>Her first project was a website that she built from scratch. Although it’s not finished and not yet responsive, she’s still proud of it because she created it herself. The project represents her growth in coding and motivates her to keep improving and learning. It may not be perfect, but for her, it’s a big step toward becoming a better developer.</p>
+    <a href="https://louraena.github.io/Louraena.BPWebsite/Album.html" class="btn" target="_blank">View Project</a>
+  </div>
+  <div class="container">
+    <h2>DevNexus Learning</h2>
+    <p>Her first project website was created during her second year in college as part of her Technopreneurship subject. It was a big step for her, marking her growth and dedication to coding. Although the website is only finished for big screens and not yet responsive, she still sees it as a success. She is very proud of what she has built, as it reflects her hard work, creativity, and passion for web development.</p>
+    <a href="https://louraena.github.io/DevNexusLearning/HOME.html" class="btn" target="_blank">View Project</a>
+  </div>
+  <div class="container">
+    <h2>Enterprise Bank</h2>
+    <p>This was her first real project because it was made for a client—her first ever client. It was a huge milestone for her, and she hopes it won’t be the last. Through this project, she learned a lot, from handling client requirements to improving her coding skills. The experience not only challenged her but also inspired her even more to keep growing as a developer.</p>
+    <a href="https://louraena.github.io/EnterpriseBank/" class="btn" target="_blank">View Project</a>
+  </div>
+  <div class="container">
+    <h2>Jonaxx Story Journal</h2>
+    <p>This is her current and ongoing project, one that is very special to her. It’s something she truly wants to create because there is no existing project like it. As a Jonaxx story lover, she was inspired to build this project from her own passion and ideas. It’s not just another project for her—it’s something she deeply loves and is excited to bring to life.</p>
+    <a href="https://louraena.github.io/JonaxxStoryJournal/" class="btn" target="_blank">View Project</a>
+  </div>
+
+  
+</div>
+  
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+      document.querySelector('.burger').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

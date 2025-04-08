@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css">
+  <title>LOURAENA's PROFILE</title>
+
+  <style>
+    
+.containera{
+  display: flex;
+  gap: 20px;
+  margin: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container {
+  width: 350px; 
+  min-height: 250px; 
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+.container h2 {
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.container p {
+  font-size: 15px;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+
+.containera {
+  display: flex;
+  align-items: stretch;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+@media (max-width: 1024px) {
+  .container {
+    width: 300px; 
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%; 
+    min-height: auto; 
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <header>
+        <div class="logo">LOURAENA</div>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html"  class="active">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="project.html">Projects</a></li>
+            </ul>
+          </nav>
+    
+        <div class="burger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        </div>
+  </header>
+<div class="containera">
+  <div class="container">
+    <h2>Who is Cyndilou?</h2>
+    <p>Her full name is Cyndilou Ceasara N. Guillena.</p>
+    <p>She is a Bachelor of Science in Information Technology (BSIT) student and an aspiring software and web developer </p>
+    <p>She studied at Gingoog City College.</p>
+    </div>
+  <div class="container">
+    <h2>A Jonaxx Story Lover</h2>
+    <p>She loves reading Jonaxx stories and enjoys fictional books. Most of the time, especially when she feels bored, she reads to pass the time and have fun. Reading helps her relax and takes her to different worlds through stories. It has become one of her favorite hobbies.</p>
+  </div>
+  <div class="container">
+    <h2>NOT INTO SPORT</h2>
+    <p>She doesn’t like playing sports, but she enjoys watching others play. She finds it exciting to see the game, cheer for players, and feel the thrill of the competition. Watching sports lets her enjoy the fun without having to play herself.</p>
+  </div>
+  <div class="container">
+    <h2>A HORROR MOVIE LOVER</h2>
+    <p>She loves watching horror movies because she enjoys following the story and trying to guess what will happen next. The mystery, suspense, and unexpected twists keep her excited and curious. She also likes thrilling movies that make her heart race and keep her at the edge of her seat. The feeling of excitement and surprise makes watching these kinds of movies fun and enjoyable for her.</p>
+  </div>
+  <div class="container">
+    <h2>A PROGRAMMER</h2>
+    <p>She loves to code because it gives her a sense of satisfaction and accomplishment. Seeing her code work successfully makes her feel proud, especially knowing that she created it on her own. It excites her to build something from scratch and bring her ideas to life. The more she codes, the more she wants to create and improve, making it a passion she truly enjoys.</p>  
+  </div>
+  <div class="container">
+    <h2>A SWIFTIE</h2>
+    <p>She is a proud Swiftie and a big fan of Taylor Swift’s music. She loves how Taylor’s songs tell heartfelt stories that she can relate to. Whether she’s feeling happy, sad, or inspired, there’s always a song that matches her mood. Taylor’s music is more than just entertainment for her—it’s a source of comfort and inspiration. The deep lyrics and emotional stories in Taylor’s songs inspire her.</p>  
+  </div>
+</div>
+  
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+      document.querySelector('.burger').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
